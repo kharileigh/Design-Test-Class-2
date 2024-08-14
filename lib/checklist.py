@@ -21,4 +21,9 @@ class Checklist():
     
 
     
-   
+    def incomplete_tasks(self, index):
+        
+
+        self._tasklist.pop(index)
+
+        return self._tasklist 

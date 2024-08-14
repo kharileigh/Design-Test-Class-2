@@ -43,3 +43,19 @@ def test_add_task_view_tasks():
 
 
 
+###  -------- REMOVE TASK
+"""
+Given tasklist -- 
+remove completed task --- using position in list
+#returns desired result -- tasklist removing current task
+"""
+def test_incomplete_tasks():
+    checklist = Checklist()
+    checklist.add("Complete Unit 2 Assignment")
+    checklist.add("Complete Unit 3 Assignment")
+    checklist.add("Complete Unit 4 Assignment")
+
+    # get tasklist
+    # remove first task -- using index
+    # return list
+    assert checklist.incomplete_tasks(0) == ["Complete Unit 3 Assignment", "Complete Unit 4 Assignment"]
