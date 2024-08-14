@@ -77,7 +77,15 @@ class Checklist:
 
 
 ``` python
-# EXAMPLE
+
+# """
+# Checklist instantiated correctly
+# """
+# def test_checklist_instantiated():
+    
+#     # checklist = Checklist()
+#     # assert checklist.tasklist == []
+
 
 """
 Given no input
@@ -101,7 +109,8 @@ def test_add_task_view_tasks():
     # assert checklist.tasklist(["Complete Unit 2 Assignment"])
 
 """
-Given tasklist -- remove completed task
+Given tasklist -- 
+remove completed task --- using position in list
 #returns desired result -- tasklist removing current task
 """
 def test_incomplete_tasks():
