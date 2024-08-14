@@ -59,9 +59,9 @@ class Checklist:
         #   none
         pass 
     
-    def incompleted_tasks(self):
+    def incomplete_tasks(self, index):
         # Parameters :
-        #   list containig tasks
+        #   index of task
         # Returns:
         #   returns lists of tasks -- now only incomplete ones
         # Side-effects:
@@ -78,13 +78,13 @@ class Checklist:
 
 ``` python
 
-# """
-# Checklist instantiated correctly
-# """
-# def test_checklist_instantiated():
+"""
+Checklist instantiated correctly
+"""
+def test_checklist_instantiated():
     
-#     # checklist = Checklist()
-#     # assert checklist.tasklist == []
+    # checklist = Checklist()
+    # assert checklist.tasklist == []
 
 
 """
@@ -109,7 +109,7 @@ def test_add_task_view_tasks():
     # assert checklist.tasklist(["Complete Unit 2 Assignment"])
 
 """
-Given tasklist -- 
+Given index of task -- 
 remove completed task --- using position in list
 #returns desired result -- tasklist removing current task
 """
